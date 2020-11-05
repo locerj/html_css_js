@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- doctype informa aop agente de usuario a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcelo">
+    <title>Document</title>
+
+    <style>
+        li ul {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s;;
+        }
+
+        li:hover {
+            background-color: #ccc;
+        }
+
+        li:hover ul {
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>lista aninhadas e definição</h1>
+    
+    <h2>lista aninhada</h2>
+    <ul>
+        <li>item 1</li>
+        <li>item 2
+            <ul>
+                <li>item 2.1</li>
+                <li>item 2.2</li>
+            </ul>
+        </li>
+        <li>item 3</li>
+    </ul>
+
+    <hr>
+
+    <h2>lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação de Hypertexto</dd>
+        
+        <dt>CSS</dt>
+        <dd>Linguagem para criação de folhas de estilo</dd>
+    </dl>
+
+
+    <hr>
+
+    <dl>
+        <dt>www</dt>
+        <dt>internet</dt>
+        <dd>rede mundial de computadores</dd>
+
+        <dt>Javascript</dt>
+        <dd>linguagem script para internet</dd>
+        <dd>script para rodar</dd>
+    </dl>
+</body>
+</html>

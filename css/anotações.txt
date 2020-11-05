@@ -24,3 +24,198 @@ fixed:
 
 
 z-index: posiciona o elementos um em cima do outro, empilha.
+
+
+aula 41 - lista aninhadas e definição ---------------------------------
+ lista aninhadas
+<ul>
+   <li></li>
+   <li></li>
+   <li>
+      <ul>
+         <li></li>
+      </ul>
+   </li>
+</ul>
+
+LISTA DE DEFINIÇÃO
+ <dl>
+    <dt></dt>
+    <dd></dd>
+    <dt></dt>
+    <dd></dd>
+    <dt></dt>
+    <dd></dd>
+ </dl>
+
+
+aula 43 -  overflow
+---------------------------------
+
+overflow
+propriedaes:
+-visible - mostra o conteúdo da div, mesmo sendo maior que a mesma
+-hidden - não mostra o conteúdo que passa do tamanho da div
+-scrool - criar um scrool na div mesmo que não seja necessário
+-auto - criar um scroll na div, quando necessário
+
+
+aula44 - tabelas 
+-----------------------------
+ex:
+<table>
+   <tr>
+      <td></td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+   </tr>
+
+    <tr>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+
+atributos
+
+colspan - para coluna
+rowspan - para linha
+
+ex:
+
+<table>
+   <tr>
+      <td colspan="2"></td>
+   </tr>
+     <tr>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+
+<table>
+   
+   <tr>
+      <td rowspan="2"></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+    <tr>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+
+adicionar semantica:
+
+table header - cabeçalho da tabelas
+th - th vem dentro de um tr, e deve ter o mesmo numerto de tr que vc colocar na tabela
+ex:
+<table>
+   <tr>
+      <th></th>
+      <th></th>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+   </tr>
+</table>
+
+mais semantica com 
+<thead><tboby><tfoot>
+por padrão se coloca o tfoot, no caso o footer da tabela, depois do thead.
+ex:
+
+<table>
+   <thead>
+      <tr>
+         <th></th>
+         <th></th>
+      </tr>
+   </thead>
+   <tfoot>
+      <tr>
+         <td></td>
+      </tr>
+   </tfoot>
+   <tbody>
+      <tr>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+      </tr>
+   </tbody>
+</table>
+
+também existe a tag caption, que é como se fosse o título da tabela
+propriedae:
+border-collapse
+parametros:
+- separate
+- collapse
+
+
+----------------------------------------
+aula46 - fomulário de busca no google
+
+principais tags
+<form>
+   <input type="text" name="q">
+   <input type="submit" value="ok">
+</form>
+ ------------------------------------------
+aula47 - semântica em formulários
+
+principais tags
+<form>
+   <label for="txtbusca"></label>
+   <input type="text" name="q" id="txtbusca">
+   <input type="submit" value="ok">
+</form>
+
+organizar entradas de dados
+Tipos de entrada 
+input:         input(html5)
+- text         - email
+- password     - tel 
+- checkbox     - url
+- radio        - search
+- file         - number
+- hidden       - range
+- submit       - date
+- button       - time
+- reset        - color
+
+Outros tipos de entrada de dados
+<textarea>
+<select>
+<option>
+
+alguns atributos
+- autofocus    - max
+- checked      - mim
+- required     - cols
+- maxlength    - rows
+- multiple     - size
+- placeholder  - step
+
